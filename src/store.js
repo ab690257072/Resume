@@ -1,34 +1,22 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-var search = require('./img/search-list.png'),
-  website = require('./img/website.png'),
-  picker = require('./img/datepicker.png'),
-  carousel = require('./img/carousel.png'),
-  cardRes = require('./img/card-resume.png'),
-  product = require('./img/product.png'),
-  gallery = require('./img/3Dgallery.png'),
-  todolist = require('./img/todolist.png'),
-  validation = require('./img/validation.png'),
-  music = require('./img/music.png'),
-  pinterest = require('./img/pinterest.png');
-
 Vue.use(Vuex);
 
 var state = {
   portList: [
-    {title: '百度下拉列表',url: 'http://52muzi.applinzi.com/Vue/search-list/', shortcut: search},
-    {title: '企业页面',url: 'http://52muzi.applinzi.com/site/requirejs-site/', shortcut: website},
-    {title: '卡片简历',url: 'http://52muzi.applinzi.com/resume/card-resume/', shortcut: cardRes},
-    {title: 'datepicker',url: 'http://ocx7m1fc8.bkt.clouddn.com/datepicker/index.html', shortcut: picker},
-    {title: '移动端新闻站',url: '', shortcut: website},
-    {title: '轮播组件',url: 'http://ocx7m1fc8.bkt.clouddn.com/carousel/gradient/index.html', shortcut: carousel},
-    {title: '瀑布流图片站',url: 'http://ocx7m1fc8.bkt.clouddn.com/pinterest/lazyload-pist/index.html', shortcut: pinterest},
-    {title: 'tab筛选产品',url: 'http://ocx7m1fc8.bkt.clouddn.com/tab/tab_product/index.html#', shortcut: product},
-    {title: '3D照片墙',url: 'http://52muzi.applinzi.com/3D-gallery/', shortcut: gallery},
-    {title: 'todolist',url: 'http://52muzi.applinzi.com/todolist/', shortcut: todolist},
-    {title: '表单验证',url: 'http://52muzi.applinzi.com/%E4%BB%BB%E5%8A%A124/task24-3/', shortcut: validation},
-    {title: 'H5音乐播放器',url: 'http://52muzi.applinzi.com/zPlayer/', shortcut: music}
+    {title: '百度下拉列表',url: 'http://52muzi.applinzi.com/Vue/search-list/', shortcut: './src/assets/search-list.png'},
+    {title: '企业页面',url: 'http://52muzi.applinzi.com/site/requirejs-site/', shortcut: './src/assets/website.png'},
+    {title: '卡片简历',url: 'http://52muzi.applinzi.com/resume/card-resume/', shortcut: './src/assets/card-resume.png'},
+    {title: 'datepicker',url: 'http://ocx7m1fc8.bkt.clouddn.com/datepicker/index.html', shortcut: './src/assets/datepicker.png'},
+    {title: '移动端新闻站',url: 'http://52muzi.applinzi.com/news-station', shortcut: './src/assets/news-station.png'},
+    {title: '轮播组件',url: 'http://ocx7m1fc8.bkt.clouddn.com/carousel/gradient/index.html', shortcut: './src/assets/carousel.png'},
+    {title: '瀑布流图片站',url: 'http://ocx7m1fc8.bkt.clouddn.com/pinterest/lazyload-pist/index.html', shortcut: './src/assets/pinterest.png'},
+    {title: 'tab筛选产品',url: 'http://ocx7m1fc8.bkt.clouddn.com/tab/tab_product/index.html#', shortcut: './src/assets/product.png'},
+    {title: '3D照片墙',url: 'http://52muzi.applinzi.com/3D-gallery/', shortcut: './src/assets/3Dgallery.png'},
+    {title: 'todolist',url: 'http://52muzi.applinzi.com/todolist/', shortcut: './src/assets/todolist.png'},
+    {title: '表单验证',url: 'http://52muzi.applinzi.com/%E4%BB%BB%E5%8A%A124/task24-3/', shortcut: './src/assets/validation.png'},
+    {title: 'H5音乐播放器',url: 'http://52muzi.applinzi.com/zPlayer/', shortcut: './src/assets/music.png'}
   ],
   portMsg: [
     {title: 'Ajax', content: [{url: 'http://52muzi.applinzi.com/%E4%BB%BB%E5%8A%A126/task26-3/', contentTitle: '加载更多'}, {url: 'http://52muzi.applinzi.com/%E4%BB%BB%E5%8A%A124/task24-1/', contentTitle: 'mock数据'}, {url: 'http://52muzi.applinzi.com/%E4%BB%BB%E5%8A%A124/task24-3/', contentTitle: '表单验证'}]},
@@ -45,6 +33,7 @@ var state = {
     {title: 'pinterest瀑布流组件', content: [{url: 'http://ocx7m1fc8.bkt.clouddn.com/pinterest/demo/index.html', contentTitle: '瀑布流demo'}, {url: 'http://ocx7m1fc8.bkt.clouddn.com/pinterest/lazyload-pist/index.html', contentTitle: '无限加载瀑布流'}]},
     {title: '原生JS函数库', content: [{url: 'http://ocx7m1fc8.bkt.clouddn.com/func/Date/index.html', contentTitle: 'Date函数'}, {url: 'http://52muzi.applinzi.com/DOM/', contentTitle: '简单DOM操作'}]},
     {title: 'Vue', content: [{url: 'http://52muzi.applinzi.com/Vue/msg-board/', contentTitle: '简易留言板'}, {url: 'http://52muzi.applinzi.com/Vue/vuex-demo/', contentTitle: 'vuex-demo'}, {url: 'http://52muzi.applinzi.com/Vue/search-list/', contentTitle: '百度下拉列表'}]},
+    {title: 'Vue移动端新闻站', content: [{url: 'http://52muzi.applinzi.com/news-station/', contentTitle: 'Vue今日头条'}]},
     {title: '简历页面', content: [{url: 'http://52muzi.applinzi.com/resume/card-resume/', contentTitle: '卡片简历'}, {url: 'http://52muzi.applinzi.com/resume/weibo-resume/', contentTitle: '长微博简历'}]},
     {title: '企业页面', content: [{url: 'http://52muzi.applinzi.com/site/pc-site/', contentTitle: '无响应式静态页面'}, {url: 'http://52muzi.applinzi.com/site/requirejs-site/', contentTitle: 'require模块化页面'}, {url: 'http://52muzi.applinzi.com/site/gulp-site/', contentTitle: 'gulp增强页面'}]}
   ],

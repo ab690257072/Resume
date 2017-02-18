@@ -6,7 +6,7 @@
           <el-collapse-item v-for="(val,index) in portMsg" :title="val.title" :name="index+1">
             <ul>
               <li v-for="item in val.content">
-                <a :href="item.url" target="_blank">{{ item.contentTitle }}</a>
+                <a :href="item.url">{{ item.contentTitle }}</a>
               </li>
             </ul>
           </el-collapse-item>
@@ -15,7 +15,7 @@
       <div class="port-main">
         <ul class="port-card clearfix">
           <li v-for="item in portList">
-            <a :href="item.url" target="_blank">
+            <a :href="item.url">
               <img :src="item.shortcut" :alt="item.title">
               <h3>{{item.title}}</h3>
             </a>
@@ -25,8 +25,8 @@
     </div>
     <div class="port-more">
       <h3>嘿，想了解更多吗？</h3>
-      <a href="" class="btn btn-more_1"><span>作品源码</span></a>
-      <a href="" class="btn btn-more_2"><span>我的简历</span></a>
+      <a href="https://github.com/ab690257072/portfolio" class="btn btn-more_1" target="_blank"><span>作品源码</span></a>
+      <a href="src/assets/resume.pdf" class="btn btn-more_2" target="_blank"><span>我的简历</span></a>
     </div>
   </div>
 </template>

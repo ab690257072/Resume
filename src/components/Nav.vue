@@ -2,7 +2,7 @@
   <div id="nav-bar" :class="toggleNav">
     <div class="container clearfix">
       <div class="logo">
-        <a href="#"><img src="../img/logo.png" alt="logo"></a>     
+        <a href="#"><img :src="logoImg" alt="logo"></a>     
       </div>
       <div class="nav-main-ms">
         <i class="iconfont icon-listzhuanhuan"></i>
@@ -36,9 +36,10 @@
       return {
         show: true,
         show2: false,
+        logoImg: './src/assets/logo.png',
         navList: [{
             title: 'RESUME',
-            url: ''
+            url: 'src/assets/resume.pdf'
           },
           {
             title: 'BLOG',

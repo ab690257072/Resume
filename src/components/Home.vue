@@ -11,20 +11,20 @@
               </text>
             </svg>
           </div>
-          <img src="../img/logo.png" alt="photo">
+          <img :src="logoImg" alt="photo">
         </div>
         <h4>你好，我是赵力群</h4>
         <p>——热爱编程喜欢运动的家伙</p>
-        <a href="" class="btn"><span>View My CV</span></a>
+        <a href="src/assets/resume.pdf" target="_blank" class="btn"><span>View My CV</span></a>
       </div>
     </div>
     <div id="portfolio">
       <h2 class="wow topic bounceInDown">Portfolio</h2>
-      <a href="" class="btn btn-more wow bounceInDown"><span>View More</span></a>
+      <router-link to="/portfolio" class="btn btn-more wow bounceInDown"><span>View More</span></router-link>
       <hr>
       <ul class="gallery clearfix">
         <li v-for="item in portList" class="wow fadeIn">
-          <a :href="item.url" target="_blank">
+          <a :href="item.url">
             <img :src="item.shortcut" :alt="item.title">
             <span class="cover">{{item.title}}</span>
           </a>
@@ -38,7 +38,7 @@
         <hr>
         <ul class="blog clearfix">
           <li v-for="(item,i) in blogList" class="wow bounceInUp" :data-wow-delay="i*0.2+'s'">
-            <a :href="item.url" target="_blank">
+            <a :href="item.url">
               <div class="blog-img"></div>
               <h4>{{item.title}}</h4>
             </a>
@@ -104,7 +104,7 @@
           <transition-group enter-active-class="zoomIn" leave-active-class="zoomOut">
             <div class="dialog animated" v-show="showDialog" :key="1" @click="showDialog=false">
               <p>Contact Me</p>
-              <img src="../img/weixin.jpg" class="weixin-img" alt="weixin">
+              <img :src="weixinImg" class="weixin-img" alt="weixin">
             </div>
           </transition-group>
         </div>
@@ -117,14 +117,13 @@
   import { Message } from 'element-ui'
   import { mapGetters } from 'vuex'
 
-  var blog = require('../img/blog.jpg');
-
   export default {
     data() {
       return {
         showDialog: false,
+        logoImg: './src/assets/logo.png',
+        weixinImg: './src/assets/weixin.jpg',
         input2: '',
-        blogImg: blog,
         formData: {
           cName: '',
           cEmail: '',
