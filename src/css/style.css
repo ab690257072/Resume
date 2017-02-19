@@ -282,13 +282,23 @@ address {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(37, 220, 202, .45);
-  color: #fff;
+  background: #FBFBEA;
+  color: #333;
   text-align: center;
-  line-height: 210px;
-  font-size: 32px;
+  font-size: 16px;
   transition: all .5s ease;
   opacity: 0;
+}
+#portfolio .gallery li .cover h4 {
+  color: #000;
+  padding-top: 10px;
+  text-align: center;
+}
+#portfolio .gallery li .cover p {
+  padding: 10px;
+  line-height: 1.5;
+  text-align: left;
+  text-indent: 2em;
 }
 #portfolio .gallery .cover:hover {
   opacity: 1;

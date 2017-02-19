@@ -26,7 +26,10 @@
         <li v-for="item in portList" class="wow fadeIn">
           <a :href="item.url">
             <img :src="item.shortcut" :alt="item.title">
-            <span class="cover">{{item.title}}</span>
+            <div class="cover">
+              <h4>{{item.title}}</h4>
+              <p>{{item.intro}}</p>
+            </div>
           </a>
         </li>
       </ul>
@@ -114,8 +117,12 @@
 </template>
 <script>
   import AV from 'leancloud-storage'
-  import { Message } from 'element-ui'
-  import { mapGetters } from 'vuex'
+  import {
+    Message
+  } from 'element-ui'
+  import {
+    mapGetters
+  } from 'vuex'
 
   export default {
     data() {
@@ -138,8 +145,8 @@
     ]),
     methods: {
       sendMsg() {
-        for(var key in this.formData) {
-          if(this.formData[key] == '') {
+        for (var key in this.formData) {
+          if (this.formData[key] == '') {
             Message.warning({
               message: '抱歉，请填写好完整信息~'
             });
