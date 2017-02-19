@@ -7,15 +7,15 @@ var state = {
   portList: [
     {title: '百度下拉列表', intro: '基于Vue1.0，使用了vue-resource实现交互，获取百度搜索jsonp接口，能够实现下拉提示列表功能，和上下键选择功能，同时回车键可以进行百度搜索',url: 'http://52muzi.applinzi.com/Vue/search-list/', shortcut: './src/assets/search-list.png'},
     {title: 'todolist', intro: '基于Vue2.0，使用了webpack加载模块，阅读leancloud文档使用了它的JS SDK，实现了注册登录和存储用户数据的功能，todolist有删除和已完成的选项', url: 'http://52muzi.applinzi.com/todolist/', shortcut: './src/assets/todolist.png'},
-    {title: '轮播组件', intro: '用jQuery和JS原型构造函数模式封装了一套轮播组件，包括滚动轮播、全屏滚动轮播、渐变轮播等', url: 'http://ocx7m1fc8.bkt.clouddn.com/carousel/gradient/index.html', shortcut: './src/assets/carousel.png'},
+    {title: '轮播组件', intro: '用jQuery和JS原型构造函数模式封装了一套轮播组件，包括滚动轮播、全屏滚动轮播、渐变轮播等', url: 'http://52muzi.applinzi.com/Carousel-com/', shortcut: './src/assets/carousel.png'},
     {title: '移动端新闻站', intro: '基于Vue2.0，结构分为Nav、Footer、Home等主板块，导航和脚部使用了vue-router配置路由，用vuex进行状态管理、axios进行数据交互并配置了loading效果', url: 'http://52muzi.applinzi.com/news-station', shortcut: './src/assets/news-station.png'},
     {title: 'H5音乐播放器', intro: '利用了HTML5的audio标签,在页面上嵌入音频文件,然后通过该标签的属性控制开始、暂停、音量调节、歌曲进度功能，用数组保存上一首歌曲，但最多只保存一首', url: 'http://52muzi.applinzi.com/zPlayer/', shortcut: './src/assets/music.png'},
-    {title: '瀑布流图片站', intro: '用jQuery的ajax()方法和新浪相册api得到数据，拼装DOM并展示，通过懒加载监听scroll事件，从而实现无限懒加载的效果', url: 'http://ocx7m1fc8.bkt.clouddn.com/pinterest/lazyload-pist/index.html', shortcut: './src/assets/pinterest.png'},
+    {title: '瀑布流图片站', intro: '用jQuery的ajax()方法和新浪相册api得到数据，拼装DOM并展示，通过懒加载监听scroll事件，从而实现无限懒加载的效果', url: 'http://52muzi.applinzi.com/Pinterest-com/', shortcut: './src/assets/pinterest.png'},
     {title: '企业页面', intro: '使用requirejs模块化和gulp打包的企业站页面，组件包括有:轮播、回到顶部、懒加载瀑布流、曝光组件等', url: 'http://52muzi.applinzi.com/site/requirejs-site/', shortcut: './src/assets/website.png'},
-    {title: 'datepicker', intro: '使用JS原型和构造函数模式，通过DOM拼装和点击事件处理，封装成一个datepicker，能够选择和查看日期', url: 'http://ocx7m1fc8.bkt.clouddn.com/datepicker/index.html', shortcut: './src/assets/datepicker.png'},
+    {title: 'datepicker', intro: '使用JS原型和构造函数模式，通过DOM拼装和点击事件处理，封装成一个datepicker，能够选择和查看日期', url: 'http://52muzi.applinzi.com/datepicker/', shortcut: './src/assets/datepicker.png'},
     {title: '3D照片墙', intro: '通过CSS3的transition和transform等属性，实现一个3D照片圆环，监听mousemove事件从而能够自由旋转圆环', url: 'http://52muzi.applinzi.com/3D-gallery/', shortcut: './src/assets/3Dgallery.png'},
     {title: '表单验证', intro: 'Ajax交互实现简单的表单验证功能，将用户数据存储发送至后端，在后端进行匹配，返回匹配结果，前端对不同结果进行DOM和CSS处理提示用户', url: 'http://52muzi.applinzi.com/%E4%BB%BB%E5%8A%A124/task24-3/', shortcut: './src/assets/validation.png'},
-    {title: 'tab筛选产品', intro: '简单的tab切换组件，封装成组件后可以在同一页面不同处无影响单独使用，选择不同的tab展示不同的panel板', url: 'http://ocx7m1fc8.bkt.clouddn.com/tab/tab_product/index.html#', shortcut: './src/assets/product.png'},
+    {title: 'tab筛选产品', intro: '简单的tab切换组件，封装成组件后可以在同一页面不同处无影响单独使用，选择不同的tab展示不同的panel板', url: 'http://52muzi.applinzi.com/tab-com/', shortcut: './src/assets/product.png'},
     {title: '卡片简历', intro: '简单的卡片式简历，作品以卡片形式展现，简洁大方', url: 'http://52muzi.applinzi.com/resume/card-resume/', shortcut: './src/assets/card-resume.png'}
   ],
   portMsg: [
