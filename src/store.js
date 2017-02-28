@@ -5,15 +5,15 @@ Vue.use(Vuex);
 
 var state = {
   portList: [
-    {title: '百度下拉列表', intro: '基于Vue1.0的百度下拉列表，有下拉提示列表功能，和上下键选择功能，回车键可以进行搜索',url: 'http://52muzi.applinzi.com/Vue/search-list/', shortcut: './src/assets/search-list.png'},
-    {title: 'todolist', intro: '基于Vue2.0的todolist，leancloud实现注册登录和存储用户数据的功能，todolist有删除和已完成的选项', url: 'http://52muzi.applinzi.com/todolist/', shortcut: './src/assets/todolist.jpg'},
-    {title: '轮播组件', intro: '用jQuery和JS原型构造函数模式封装了一套轮播组件，包括滚动轮播、全屏滚动轮播、渐变轮播等', url: 'http://52muzi.applinzi.com/Carousel-com/', shortcut: './src/assets/carousel.jpg'},
-    {title: '移动端新闻站', intro: '基于Vue2.0，结构分为Nav、Footer、Home等主板块，axios进行数据交互并配置了loading效果', url: 'http://52muzi.applinzi.com/news-station', shortcut: './src/assets/news-station.png'},
-    {title: 'HTML 5 音乐播放器', intro: '使用HTML5的audio标签实现的FM音乐播放器，有开始、暂停、音量调节、歌曲进度功能，用数组保存上一首歌曲，但最多只保存一首', url: 'http://52muzi.applinzi.com/zPlayer/', shortcut: './src/assets/music.png'},
-    {title: '瀑布流图片站', intro: '用jQuery的ajax()方法和新浪相册api得到数据，拼装DOM并展示，通过懒加载监听scroll事件，从而实现无限懒加载的效果', url: 'http://52muzi.applinzi.com/Pinterest-com/', shortcut: './src/assets/pinterest.png'},
-    {title: '企业页面', intro: '使用requirejs模块化和gulp打包的企业站页面，组件包括有:轮播、回到顶部、懒加载瀑布流、曝光组件等', url: 'http://52muzi.applinzi.com/site/requirejs-site/', shortcut: './src/assets/website.png'},
-    {title: 'datepicker', intro: '使用JS原型和构造函数模式，通过DOM拼装和点击事件处理，封装成一个datepicker，能够选择和查看日期', url: 'http://52muzi.applinzi.com/datepicker/', shortcut: './src/assets/datepicker.png'},
-    {title: '3D 照片墙', intro: '通过CSS3的transition和transform等属性，实现一个3D照片圆环，监听mousemove事件从而能够自由旋转圆环', url: 'http://52muzi.applinzi.com/3D-gallery/', shortcut: './src/assets/3Dgallery.png'},
+    {title: '百度下拉列表', intro: '基于 Vue 1.0 的百度下拉列表，有下拉提示列表功能，和上下键选择功能，回车键可以进行搜索',url: 'http://52muzi.applinzi.com/Vue/search-list/', shortcut: './src/assets/search-list.png'},
+    {title: 'todolist', intro: '基于 Vue 2.0 的todolist，leancloud实现注册登录和存储用户数据的功能，todolist 有删除和已完成的选项', url: 'http://52muzi.applinzi.com/todolist/', shortcut: './src/assets/todolist.jpg'},
+    {title: '轮播组件', intro: '用 jQuery 和 JS 原型构造函数模式封装了一套轮播组件，包括滚动轮播、全屏滚动轮播、渐变轮播等', url: 'http://52muzi.applinzi.com/Carousel-com/', shortcut: './src/assets/carousel.jpg'},
+    {title: '移动端新闻站', intro: '基于 Vue2.0，结构分为 Nav、Footer、Home 等主板块，axios 进行数据交互并配置了 loading 效果', url: 'http://52muzi.applinzi.com/news-station', shortcut: './src/assets/news-station.png'},
+    {title: 'HTML 5 音乐播放器', intro: '使用 HTML 5 的 audio 标签实现的 FM 音乐播放器，有开始、暂停、音量调节、歌曲进度功能，用数组保存上一首歌曲，但最多只保存一首', url: 'http://52muzi.applinzi.com/zPlayer/', shortcut: './src/assets/music.png'},
+    {title: '瀑布流图片站', intro: '用 jQuery 的 ajax 方法和新浪相册 api 得到数据，拼装 DOM 并展示，通过懒加载监听 scroll 事件，实现无限懒加载的效果', url: 'http://52muzi.applinzi.com/Pinterest-com/', shortcut: './src/assets/pinterest.png'},
+    {title: '企业页面', intro: '使用 RequireJS 模块化和 Gulp 打包的企业站页面，组件包括有:轮播、回到顶部、懒加载瀑布流、曝光组件等', url: 'http://52muzi.applinzi.com/site/requirejs-site/', shortcut: './src/assets/website.png'},
+    {title: 'datepicker', intro: '使用 JS 原型和构造函数模式，通过 DOM 拼装和点击事件处理，封装成一个 datepicker，能够选择和查看日期', url: 'http://52muzi.applinzi.com/datepicker/', shortcut: './src/assets/datepicker.png'},
+    {title: '3D 照片墙', intro: '通过 CSS 3 的 transition 和 transform 等属性，实现一个 3D 照片圆环，监听 mousemove 事件从而能够自由旋转圆环', url: 'http://52muzi.applinzi.com/3D-gallery/', shortcut: './src/assets/3Dgallery.png'},
     {title: '卡片简历', intro: '简单的卡片式简历，作品以卡片形式展现，简洁大方', url: 'http://52muzi.applinzi.com/resume/card-resume/', shortcut: './src/assets/card-resume.png'}
   ],
   portMsg: [
