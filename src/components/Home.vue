@@ -15,7 +15,7 @@
         </div>
         <h4>你好，我是赵力群</h4>
         <p>——热爱编程喜欢运动的家伙</p>
-        <a href="src/assets/resume.pdf" target="_blank" class="btn"><span>View My CV</span></a>
+        <a href="src/assets/赵力群-前端工程师.pdf" target="_blank" class="btn"><span>View My CV</span></a>
       </div>
     </div>
     <div id="portfolio">

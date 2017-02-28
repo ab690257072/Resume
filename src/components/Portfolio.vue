@@ -26,7 +26,7 @@
     <div class="port-more">
       <h3>嘿，想了解更多吗？</h3>
       <a href="https://github.com/ab690257072/portfolio" class="btn btn-more_1" target="_blank"><span>作品源码</span></a>
-      <a href="src/assets/resume.pdf" class="btn btn-more_2" target="_blank"><span>我的简历</span></a>
+      <a href="src/assets/赵力群-前端工程师.pdf" class="btn btn-more_2" target="_blank"><span>我的简历</span></a>
     </div>
   </div>
 </template>

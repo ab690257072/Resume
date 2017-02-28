@@ -39,7 +39,7 @@
         logoImg: './src/assets/logo.png',
         navList: [{
             title: 'RESUME',
-            url: 'src/assets/resume.pdf'
+            url: 'src/assets/赵力群-前端工程师.pdf'
           },
           {
             title: 'BLOG',
