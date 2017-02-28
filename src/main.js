@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import {
-  Progress,
   Collapse,
   CollapseItem
 } from 'element-ui'
@@ -11,7 +10,6 @@ import routes from './router.config.js'
 import store from './store.js'
 
 Vue.use(VueRouter);
-Vue.use(Progress);
 Vue.use(Collapse);
 Vue.use(CollapseItem);
 

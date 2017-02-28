@@ -14,7 +14,7 @@
       </div>
       <div class="port-main">
         <ul class="port-card clearfix">
-          <li v-for="item in portList">
+          <li v-for="item in portList2">
             <a :href="item.url">
               <img :src="item.shortcut" :alt="item.title">
               <h3>{{item.title}}</h3>
@@ -37,13 +37,18 @@
   export default {
     data() {
       return {
-        activeName: '1'
+        activeName: '1',
+        portList2: []
       }
     },
     computed: mapGetters([
       'portList',
       'portMsg'
-    ])
+    ]),
+    mounted() {
+      var arr = this.portList.slice(0, -1);
+      this.portList2 = arr;
+    }
   }
 </script>
 <style>
@@ -82,6 +87,7 @@
   .port-main {
     height: 100%;
     margin-left: 27%;
+    padding-bottom: 20px;
     background: #f9f9f9;
   }
   

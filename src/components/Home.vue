@@ -19,20 +19,22 @@
       </div>
     </div>
     <div id="portfolio">
-      <h2 class="wow topic bounceInDown">Portfolio</h2>
-      <router-link to="/portfolio" class="btn btn-more wow bounceInDown"><span>View More</span></router-link>
-      <hr>
-      <ul class="gallery clearfix">
-        <li v-for="item in portList" class="wow fadeIn">
-          <a :href="item.url">
-            <img :src="item.shortcut" :alt="item.title">
-            <div class="cover">
+      <div class="container">
+        <h2 class="wow topic bounceInDown">Portfolio</h2>
+        <router-link to="/portfolio" class="btn btn-more wow bounceInDown"><span>View More</span></router-link>
+        <hr>
+        <ul class="gallery clearfix">
+          <li v-for="item in portList" class="wow fadeIn">
+            <a :href="item.url">
+              <img :src="item.shortcut" :alt="item.title">
               <h4>{{item.title}}</h4>
-              <p>{{item.intro}}</p>
-            </div>
-          </a>
-        </li>
-      </ul>
+              <div class="cover">
+                <p>{{item.intro}}</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
     <div id="blogs">
       <div class="container">
@@ -54,12 +56,31 @@
         <h2 class="wow topic bounceInDown">Skills</h2>
         <i class="el-icon-arrow-down wow bounceInDown"></i>
         <hr>
-        <ul class="skill clearfix">
-          <li v-for="(val,i) in skillList" class="wow zoomIn">
-            <el-progress type="circle" :percentage="50+(i+1)*10" :width="220" :stroke-width="9"></el-progress>
-            <h4>{{val}}</h4>
-          </li>
-        </ul>
+        <div class="tag-panel">
+          <div class="tag expert">CSS</div>
+          <div class="tag familiar">LESS</div>
+        </div>
+        <div class="tag-panel">
+          <div class="tag expert">JavaScript</div>
+          <div class="tag expert">jQuery</div>
+          <div class="tag expert">Vue.js</div>
+          <div class="tag">Bootstrap</div>
+        </div>
+        <div class="tag-panel">
+          <div class="tag expert">HTML</div>
+          <div class="tag familiar">HTML5</div>
+        </div>
+        <div class="tag-panel">
+          <div class="tag expert">Npm</div>
+          <div class="tag expert">Webpack</div>
+          <div class="tag familiar">Bower</div>
+          <div class="tag familiar">Gulp</div>
+          <div class="tag familiar">RequireJS</div>
+        </div>
+        <div class="tag-panel">
+          <div class="tag familiar">PhotoShop</div>
+          <div class="tag expert">Git</div>
+        </div>
       </div>
     </div>
     <div id="contact">

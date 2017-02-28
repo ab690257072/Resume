@@ -260,45 +260,50 @@ address {
 }
 #portfolio, #skills {
   padding-bottom: 110px;
-  background: #f8f8f8;
+  background: #f4f4f4;
 }
 #portfolio .gallery {
   font-size: 0;
+  margin-left: -17.5px;
 }
 #portfolio .gallery li {
   float: left;
   position: relative;
+  margin: 0 0 30px 17.5px;
+  background: #fff;
 }
 #portfolio .gallery li a {
   display: block;
+  padding: 10px;
 }
 #portfolio .gallery li img {
-  width: 210px;
-  height: 210px;
+  width: 200px;
+  height: 150px;
+}
+#portfolio .gallery li h4 {
+  color: #777;
+  font-size: 16px;
+  padding-top: 10px;
+  text-align: center;
 }
 #portfolio .gallery li .cover {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  background: #FBFBEA;
-  color: #333;
+  bottom: 42px;
+  background: rgba(255, 255, 255, .85);
+  color: #777;
   text-align: center;
   font-size: 16px;
   transition: all .5s ease;
   opacity: 0;
 }
-#portfolio .gallery li .cover h4 {
-  color: #000;
-  padding-top: 10px;
-  text-align: center;
-}
 #portfolio .gallery li .cover p {
-  padding: 10px;
+  padding: 20px;
   line-height: 1.5;
   text-align: left;
-  text-indent: 2em;
+  font-size: 14px;
 }
 #portfolio .gallery .cover:hover {
   opacity: 1;
@@ -349,32 +354,25 @@ address {
 #blogs .blog li h4:hover {
   color: #959595;
 }
-#skills .skill li {
-  float: left;
-  width: 292.5px;
-  margin: 20px 0;
+#skills .tag-panel {
+  margin: 15px auto;
   text-align: center;
-  font-size: 120%;
 }
-#skills .skill li:nth-of-type(1) .el-progress-circle__path {
-  stroke: #fda3a3;
+#skills .tag {
+  background-color: #48d1c7;
+  color: #fff;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 2px 8px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  opacity: 0.5;
 }
-#skills .skill li:nth-of-type(2) .el-progress-circle__path {
-  stroke: #fdc4b7;
+#skills .tag.expert {
+  opacity: 1;
 }
-#skills .skill li:nth-of-type(3) .el-progress-circle__path {
-  stroke: #b2ecda;
-}
-#skills .skill li:nth-of-type(4) .el-progress-circle__path {
-  stroke: #a1e5e7;
-}
-.el-progress__text {
-  font-size: 70px!important;
-}
-#skills .skill h4 {
-  margin: 20px 0;
-  color: #666;
-  font-size: 125%;
+#skills .tag.familiar {
+  opacity: .75;
 }
 #contact form {
   width: 66.66%;
