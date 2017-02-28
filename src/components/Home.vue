@@ -162,8 +162,7 @@
     },
     computed: mapGetters([
       'portList',
-      'blogList',
-      'skillList'
+      'blogList'
     ]),
     methods: {
       sendMsg() {
