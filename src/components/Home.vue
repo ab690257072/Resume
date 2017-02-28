@@ -58,7 +58,8 @@
         <hr>
         <div class="tag-panel">
           <div class="tag expert">CSS</div>
-          <div class="tag familiar">LESS</div>
+          <div class="tag familiar">CSS 3</div>
+          <div class="tag familiar">Less</div>
         </div>
         <div class="tag-panel">
           <div class="tag expert">JavaScript</div>
@@ -68,10 +69,10 @@
         </div>
         <div class="tag-panel">
           <div class="tag expert">HTML</div>
-          <div class="tag familiar">HTML5</div>
+          <div class="tag familiar">HTML 5</div>
         </div>
         <div class="tag-panel">
-          <div class="tag expert">Npm</div>
+          <div class="tag expert">npm</div>
           <div class="tag expert">Webpack</div>
           <div class="tag familiar">Bower</div>
           <div class="tag familiar">Gulp</div>
