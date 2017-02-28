@@ -6,7 +6,7 @@ Vue.use(Vuex);
 var state = {
   portList: [
     {title: '百度下拉列表', intro: '基于 Vue 1.0 的百度下拉列表，有下拉提示列表功能，和上下键选择功能，回车键可以进行搜索',url: 'http://52muzi.applinzi.com/Vue/search-list/', shortcut: './src/assets/search-list.png'},
-    {title: 'todolist', intro: '基于 Vue 2.0 的todolist，leancloud实现注册登录和存储用户数据的功能，todolist 有删除和已完成的选项', url: 'http://52muzi.applinzi.com/todolist/', shortcut: './src/assets/todolist.jpg'},
+    {title: 'todolist', intro: '基于 Vue 2.0 的 todolist，leancloud 实现注册登录和存储用户数据的功能，todolist 有删除和已完成的选项', url: 'http://52muzi.applinzi.com/todolist/', shortcut: './src/assets/todolist.jpg'},
     {title: '轮播组件', intro: '用 jQuery 和 JS 原型构造函数模式封装了一套轮播组件，包括滚动轮播、全屏滚动轮播、渐变轮播等', url: 'http://52muzi.applinzi.com/Carousel-com/', shortcut: './src/assets/carousel.jpg'},
     {title: '移动端新闻站', intro: '基于 Vue2.0，结构分为 Nav、Footer、Home 等主板块，axios 进行数据交互并配置了 loading 效果', url: 'http://52muzi.applinzi.com/news-station', shortcut: './src/assets/news-station.png'},
     {title: 'HTML 5 音乐播放器', intro: '使用 HTML 5 的 audio 标签实现的 FM 音乐播放器，有开始、暂停、音量调节、歌曲进度功能，用数组保存上一首歌曲，但最多只保存一首', url: 'http://52muzi.applinzi.com/zPlayer/', shortcut: './src/assets/music.png'},
